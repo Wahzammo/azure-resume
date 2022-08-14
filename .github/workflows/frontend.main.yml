@@ -17,12 +17,12 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     - name: Upload to blob storage
-      uses: azure/CLI@v1
+      uses: Azure/cli@v1.0.4
       with:
         inlineScript: |
-            az storage blob upload-batch --account-name azureresumecounter -d '$web' --source frontend --overwrite
+            az storage blob upload-batch --account-name azureresumecounter --destination '$web' --source frontend --overwrite
     - name: Purge CDN endpoint
-      uses: azure/cli@v1
+      uses: Azure/cli@v1.0.4
       with:
         inlineScript: |
            az cdn endpoint purge --content-paths  "/*" --profile-name "azureresumeajc" --name "azureresumeajc" --resource-group "azureresumecounter" --no-wait
