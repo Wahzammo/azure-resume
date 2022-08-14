@@ -2,9 +2,9 @@ name: deploy_frontend
 
 on:
   push:
-        branches: [ main ]
-        paths: 
-        - 'frontend/**'
+      branches: [ main ]
+      paths: 
+      - 'frontend/**'
 
 jobs:
   build:
@@ -14,18 +14,18 @@ jobs:
     - name: login with azure
       uses: azure/login@v1
       with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     - name: Upload to blob storage
       uses: azure/CLI@v1
       with:
         inlineScript: |
-            az storage blob upload-batch --account-name azureresumecounter  -d '$web' -s frontend/
+            az storage blob upload-batch --account-name azureresumecounter -d '$web' -s frontend/
     - name: Purge CDN endpoint
       uses: azure/cli@v1
       with:
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "azureresumeajc" --name "azureresumeajc" --resource-group "azureresumecounter" --no wait
+           az cdn endpoint purge --content-paths  "/*" --profile-name "azureresumeajc" --name "azureresumeajc" --resource-group "azureresumecounter"
 
   # Azure logout
     - name: logout
