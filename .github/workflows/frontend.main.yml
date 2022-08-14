@@ -20,7 +20,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-            az storage blob upload-batch --account-name azureresumecounter -d '$web' -s frontend/ --overwrite
+            az storage blob upload-batch --account-name azureresumecounter -d '$web' --source frontend --overwrite
     - name: Purge CDN endpoint
       uses: azure/cli@v1
       with:
