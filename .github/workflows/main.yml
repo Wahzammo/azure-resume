@@ -1,0 +1,28 @@
+name: Deploy to blob storage
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - name: Upload to blob storage
+      uses: Azure/cli@1
+      with:
+        inlineScript: |
+            az storage blob upload-batch --account-name azureresumecounter --destination '$web' --source frontend --overwrite
+    - name: Purge CDN endpoint
+      uses: Azure/cli@v1
+      with:
+        inlineScript: |
+            az cdn endpoint purge --content-paths  "/*" --profile-name "azureresumeajc" --name "azureresumeajc" --resource-group "azureresumecounter" --no-wait    - name: logout
+      run: |
+        az logout
