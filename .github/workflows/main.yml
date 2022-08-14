@@ -1,4 +1,4 @@
-name: Deploy to blob storage
+name: Deploy_to_blob_storage
 
 on:
   push:
