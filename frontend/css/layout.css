@@ -97,6 +97,13 @@ header .social li {
 header .social li a { color: #fff; }
 header .social li a:hover { color: #11ABB0; }
 
+header .cert-logo {
+   position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
+}
+
 /* scrolldown link */
 header .scrolldown a {
    position: absolute;
