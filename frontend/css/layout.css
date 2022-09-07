@@ -119,6 +119,13 @@ header .scrolldown a {
 }
 header .scrolldown a:hover { color: #11ABB0; }
 
+header .cert-logo {
+   position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
+}
+
 /* primary navigation
 --------------------------------------------------------------------- */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
