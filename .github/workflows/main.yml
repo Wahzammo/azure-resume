@@ -9,7 +9,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps: 
-    - run: echo ${{ secrets.AZURE_CREDENTIALS }}
     - uses: actions/checkout@v2
     - uses: azure/login@v1
       with:
