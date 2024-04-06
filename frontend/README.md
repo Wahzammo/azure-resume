@@ -1,6 +1,11 @@
 # Your frontend live here
 
-TO DO:
+In essence, I'm a connector – bridging the physical world with the digital, ensuring seamless communication across all layers of the OSI model.
 
-- Add a current study section
-- Add a MS Forms link to the PMO questionarrie
+My electrician and comms technician background provides a deep understanding of the physical infrastructure that underpins digital communication (Layer 1), a crucial aspect of cybersecurity as physical security is often the first line of defense. Hands-on experience installing structured cabling, fiber optics, and data center power systems demonstrates my ability to construct the critical pathways for data transmission (Layer 2). This experience is valuable in securing these pathways against physical tampering or eavesdropping.
+
+As a project manager, I have managed projects with Cisco technologies and currently manage Microsoft modern workplace deployments, showcasing my ability to manage data flow across networks (Layer 3). This experience translates well to implementing network segmentation and access control measures, essential for cybersecurity. My understanding of VPNs, firewalls, and QoS (Quality of Service) highlights my focus on secure and efficient data delivery (Layer 4). Combined with my recent ISC² Certified in Cybersecurity certification, I can ensure robust network security strategies are implemented.
+
+From building PCs to deploying apps and managing cloud services (Azure, AWS, M365), I possess a strong understanding of application needs and configurations (Layers 5 & 6). This knowledge is vital for identifying and mitigating application-level vulnerabilities. My experience with cloud technologies, user licensing, and group policies demonstrates my ability to bridge the gap between technology and user experience, while also incorporating security best practices.
+
+My commitment to crafting exceptional user experiences extends beyond the workplace. This translates into personal projects where I explore the full web development stack. Building PCs (hardware - Layer 1) and configuring operating systems (software - Layers 5 & 6) reinforces my understanding of the entire technology landscape. Deploying web apps (Layer 7) on cloud platforms (Layer 6) allows me to experiment with real-world security best practices in a personal context. Even my foray into building games using C#/Unity and a web-deployed SQL-based RPG hones my ability to write clean and secure code – a critical skill for mitigating application vulnerabilities.
