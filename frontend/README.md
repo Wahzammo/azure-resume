@@ -1,5 +1,3 @@
-# Your frontend live here
-
 In essence, I'm a connector – bridging the physical world with the digital, ensuring seamless communication across all layers of the OSI model.
 
 My electrician and comms technician background provides a deep understanding of the physical infrastructure that underpins digital communication (Layer 1), a crucial aspect of cybersecurity as physical security is often the first line of defense. Hands-on experience installing structured cabling, fiber optics, and data center power systems demonstrates my ability to construct the critical pathways for data transmission (Layer 2). This experience is valuable in securing these pathways against physical tampering or eavesdropping.
